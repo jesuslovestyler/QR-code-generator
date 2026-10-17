@@ -63,6 +63,27 @@
         padding: clamp(22px, 4vw, 48px) clamp(16px, 4vw, 38px) 56px;
       }
 
+      .topbar {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+      }
+
+      .home-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 7px 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--ink);
+        font-size: 0.83rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .home-pill:hover { background: var(--surface-2); }
+
       .intro {
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
@@ -364,6 +385,9 @@
   </head>
   <body>
     <main class="page">
+      <div class="topbar">
+        <a class="home-pill" href="https://jesuslovestyler.com/">⌂ Home</a>
+      </div>
       <header class="intro">
         <h1>Turn anything into a scan.</h1>
         <p>Make a clean QR code for a link, note, email, phone number, or Wi-Fi network. Download it as a crisp PNG.</p>
@@ -698,5 +722,6 @@
         renderFields();
       })();
     </script>
+    <script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>
